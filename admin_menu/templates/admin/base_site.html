@@ -56,7 +56,7 @@
 {% block branding %}
     {% get_custom_logo as brandmark %}
     {% if brandmark %}
-	<a href="/admin">
+	<a href="{% url 'admin:index' %}">
 		<img src="{% static brandmark %}" id="branding" />
 	</a>
     {% else %}
